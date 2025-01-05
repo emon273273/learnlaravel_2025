@@ -16,6 +16,8 @@ class UserController extends Controller
 
     function aboutuser(){
 
-        return view("about");
+        $name=["emon","khalid","shakib"];
+
+        return view("about",["name"=>$name]);
     }
 }
